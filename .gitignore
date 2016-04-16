@@ -1,0 +1,27 @@
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+database.yml
+
+# OS #
+######################
+.DS_Store*
+ehthumbs.db
+Thumbs.db
+
+# Laravel #
+###################
+/vendor
+/public/storage
+Homestead.yaml
+Homestead.json
+.env
+
+# Misc #
+###################
+
+_assets
+node_modules
+ai-cache/*
