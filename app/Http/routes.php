@@ -11,6 +11,7 @@
 |
 */
 
+
 /**
  * Basic pages
  */
@@ -32,5 +33,18 @@ Route::get(
     'contact', [
         'as'   => 'contact',
         'uses' => 'PageController@contact'
+    ]
+);
+
+
+/**
+ * User Authentication
+ */
+Route::auth();
+
+Route::get(
+    'admin', [
+        'as'   => 'admin',
+        'uses' => 'AdminController@index'
     ]
 );
