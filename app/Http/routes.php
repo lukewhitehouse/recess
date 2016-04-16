@@ -11,6 +11,26 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+/**
+ * Basic pages
+ */
+Route::get(
+    '/', [
+        'as'   => 'index',
+        'uses' => 'PageController@index'
+    ]
+);
+
+Route::get(
+    'about', [
+        'as'   => 'about',
+        'uses' => 'PageController@about'
+    ]
+);
+
+Route::get(
+    'contact', [
+        'as'   => 'contact',
+        'uses' => 'PageController@contact'
+    ]
+);
