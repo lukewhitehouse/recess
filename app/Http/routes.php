@@ -36,15 +36,21 @@ Route::get(
     ]
 );
 
-
 /**
- * User Authentication
+ * Logged in views
  */
-Route::auth();
-
 Route::get(
     'admin', [
         'as'   => 'admin',
         'uses' => 'AdminController@index'
     ]
 );
+
+Route::resource('holidays', 'HolidaysController');
+
+
+
+/**
+ * User Authentication
+ */
+Route::auth();

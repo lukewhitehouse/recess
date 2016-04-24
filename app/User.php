@@ -23,4 +23,14 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    /**
+     * Get all holidays a User has requested
+     *
+     * @return Response
+     */
+    public function holidays()
+    {
+        return $this->hasMany('App\Holiday');
+    }
 }
