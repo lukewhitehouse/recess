@@ -1,10 +1,11 @@
 @extends('app')
 
 @section('content')
-    <h1>Admin area! Congrats {{ $user->name }}, you are logged in!</h1>
+    <h1>Show all holidays here</h1>
+
+    <p>holidays, holidays, holidays!</p>
 
     @if($holidays)
-        <h5>Holiday requests</h5>
         <table>
             <thead>
                 <th>Start date</th>
@@ -39,15 +40,5 @@
                 @endforeach
             </tbody>
         </table>
-    @endif
-
-    @if($user)
-        <h5>User details</h5>
-        <dl>
-            <dt>Name:</dt>
-            <dd>{{ $user->name }}</dd>
-            <dt>Email:</dt>
-            <dd>{{ $user->email }}</dd>
-        </dl>
-    @endif
+    @endif;
 @stop

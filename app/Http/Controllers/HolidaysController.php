@@ -27,8 +27,11 @@ class HolidaysController extends Controller
      */
     public function index()
     {
+        // Get all holidays for current user
+        $holidays = Holiday::where('user_id', $user->id)->get();
+
         // Show all holidays
-        return dd('INDEX');
+        return view('holidays.index')->with('holidays', $holidays);
     }
 
     /**
@@ -39,7 +42,10 @@ class HolidaysController extends Controller
      */
     public function show($holiday_id)
     {
-        // Show a single holiday entry
+        // Get holiday in question
+        $holiday = Holiday::findOrFail($holiday_id);
+
+        return view('holidays.show')->with('holiday', $holiday);
     }
 
     /**
@@ -62,15 +68,16 @@ class HolidaysController extends Controller
         $holiday = new Holiday;
         $input = $request->all();
 
-        $holiday->date_start = $input['date_start'];
-        $holiday->date_end = $input['date_end'];
+        $holiday->user_id     = \Auth::user()->id;
+        $holiday->date_start  = $input['date_start'];
+        $holiday->date_end    = $input['date_end'];
         $holiday->description = $input['description'];
-        $holiday->type = $input['type'];
-        $holiday->status = $input['status'];
+        $holiday->type        = $input['type'];
+        $holiday->status      = $input['status'];
 
         $holiday->save();
 
-        return dd('REQUEST SAVED');
+        return view('holidays.index');
     }
 
 }

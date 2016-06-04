@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Holiday;
 use App\Http\Requests;
 use Illuminate\Http\Request;
 
@@ -24,6 +25,15 @@ class AdminController extends Controller
      */
     public function index()
     {
-        return view('admin.index');
+        // Get currently logged in user
+        $user = \Auth::user();
+
+        // Get all holidays for current user
+        $holidays = Holiday::where('user_id', $user->id)->get();
+
+        return view('admin.index')->with([
+            'holidays' => $holidays,
+            'user' => $user
+        ]);
     }
 }

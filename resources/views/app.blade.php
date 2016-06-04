@@ -14,11 +14,7 @@
     <!-- Favicons -->
 
     <!-- Styles -->
-    <!--[if IE 9]><!-->
-    <!--<![endif]-->
-
-    <!--[if lte IE 8]>
-    <![endif]-->
+    <link rel="stylesheet" href="{{ elixir("css/app.css") }}">
 
     <!-- font-face declarations -->
     <!-- insert here -->
@@ -27,11 +23,17 @@
 </head>
 <body class="debug">
 
-@include('partials.header')
+<div class="container">
+    @include('partials.header')
+</div>
 
-@yield('content')
+<div class="container container--small">
+    @yield('content')
+</div>
 
-@include('partials.footer')
+<div class="container">
+    @include('partials.footer')
+</div>
 
 <!-- Footer scripts -->
 </body>

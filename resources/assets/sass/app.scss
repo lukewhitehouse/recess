@@ -1,2 +1,19 @@
-// @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
 
+html {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 85%;
+    max-width: 1233px;
+    margin: 0 auto;
+}
+
+.container--small {
+    max-width: 768px;
+}
