@@ -73,7 +73,7 @@ class HolidaysController extends Controller
         $holiday->date_end    = $input['date_end'];
         $holiday->description = $input['description'];
         $holiday->type        = $input['type'];
-        $holiday->status      = $input['status'];
+        $holiday->status      = 'pending';
 
         $holiday->save();
 

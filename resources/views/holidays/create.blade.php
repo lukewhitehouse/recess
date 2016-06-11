@@ -21,14 +21,6 @@
             'lieu' => 'Time off in lieu'
         ), null, ['required']) !!} <br>
 
-        {!! Form::label('status', 'Status') !!} <br>
-        {!! Form::select('status', array(
-            'pending' => 'Pending',
-            'accepted' => 'Accepted',
-            'declined' => 'Declined',
-            'cancelled' => 'Cancelled'
-        ), null, ['required']) !!} <br>
-
         {!! Form::submit('Submit holiday request') !!}
 
     {!! Form::close() !!}
