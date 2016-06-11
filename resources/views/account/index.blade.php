@@ -1,7 +1,7 @@
 @extends('app')
 
 @section('content')
-    <h1>Admin area! Congrats {{ $user->name }}, you are logged in!</h1>
+    <h1>Account area! Congrats {{ $user->name }}, you are logged in!</h1>
 
     @if($holidays)
         <h5>Holiday requests</h5>

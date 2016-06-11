@@ -5,7 +5,7 @@
 <nav>
     @if ( Auth::user() )
         <li>
-            <a href="/admin">Admin Area</a>
+            <a href="/account">Account</a>
         </li>
 
         <li>
