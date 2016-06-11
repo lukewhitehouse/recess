@@ -40,9 +40,9 @@ Route::get(
  * Logged in views
  */
 Route::get(
-    'admin', [
-        'as'   => 'admin',
-        'uses' => 'AdminController@index'
+    'account', [
+        'as'   => 'account',
+        'uses' => 'AccountController@index'
     ]
 );
 

@@ -6,7 +6,7 @@ use App\Holiday;
 use App\Http\Requests;
 use Illuminate\Http\Request;
 
-class AdminController extends Controller
+class AccountController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -31,7 +31,7 @@ class AdminController extends Controller
         // Get all holidays for current user
         $holidays = Holiday::where('user_id', $user->id)->get();
 
-        return view('admin.index')->with([
+        return view('account.index')->with([
             'holidays' => $holidays,
             'user' => $user
         ]);
