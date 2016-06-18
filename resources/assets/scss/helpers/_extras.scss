@@ -34,11 +34,11 @@
     height: 250px;
     overflow: hidden;
 
-    @include respond-min($bp2) {
+    @media screen and min-width($bp2) {
         height: 300px;
     }
 
-    @include respond-min($bp3) {
+    @media screen and min-width($bp3) {
         height: 400px;
     }
 
@@ -83,7 +83,7 @@
 .is-visible--bp2 {
     display: none;
 
-    @include respond-min($bp2) {
+    @media screen and min-width($bp2) {
         display: block;
     }
 }
@@ -91,7 +91,7 @@
 .is-visible--bp4 {
     display: none;
 
-    @include respond-min($bp4) {
+    @media screen and min-width($bp4) {
         display: block;
     }
 }

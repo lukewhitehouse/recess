@@ -19,7 +19,7 @@
     min-width: 15em; // 240px
     max-width: 68.5em; // 1233px
 
-    @include respond-min($bp1) {
+    @media screen and min-width($bp1) {
         width: 85%;
     }
 }
@@ -37,7 +37,7 @@
     position: relative;
     width: 100%;
 
-    @include respond-min($bp3) {
+    @media screen and min-width($bp3) {
         width: 85%;
     }
 }

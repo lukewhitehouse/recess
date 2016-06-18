@@ -25,7 +25,7 @@
     margin: 0;
     font-size: .8rem;
 
-    @include respond-min($bp3) {
+    @media screen and min-width($bp3) {
         padding-top: $base;
         border-top: ($base/4) solid $grey-lighter;
     }

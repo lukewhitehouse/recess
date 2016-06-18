@@ -36,31 +36,31 @@ body.debug {
         content: "Breakpoint 0";
     }
 
-    @include respond-min($bp1) {
+    @media screen and min-width($bp1) {
         &:before {
             content: "Breakpoint 1"
         }
     }
 
-    @include respond-min($bp2) {
+    @media screen and min-width($bp2) {
         &:before {
             content: "Breakpoint 2"
         }
     }
 
-    @include respond-min($bp3) {
+    @media screen and min-width($bp3) {
         &:before {
             content: "Breakpoint 3"
         }
     }
 
-    @include respond-min($bp4) {
+    @media screen and min-width($bp4) {
         &:before {
             content: "Breakpoint 4"
         }
     }
 
-    @include respond-min($bp5) {
+    @media screen and min-width($bp5) {
         &:before {
             content: "Breakpoint 5"
         }

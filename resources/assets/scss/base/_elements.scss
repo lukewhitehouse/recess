@@ -69,7 +69,7 @@ blockquote {
     margin-right: 0;
     font-style: italic;
 
-    @include respond-min($bp2) {
+    @media screen and min-width($bp2) {
         padding-left: $base*2;
         padding-right: $base*2;
     }

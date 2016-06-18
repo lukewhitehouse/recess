@@ -50,7 +50,7 @@
 
 /* Size specific */
 .u-float-right-bp4 {
-    @include respond-min($bp4) {
+    @media screen and min-width($bp4) {
         float: right;
     }
 }
