@@ -1,0 +1,44 @@
+/**
+ * Title:
+ *    Breadcrumbs
+ * Description:
+ *    Styling the breadcrumbs component.
+ * Sections:
+ *    $. Variables
+ *    $. Base
+ */
+
+
+
+/* $. Variables
+\*----------------------------------------------------------------*/
+
+// variables
+
+
+
+/* $. Base
+\*----------------------------------------------------------------*/
+
+.breadcrumbs {
+    position: relative;
+    margin: 0;
+    font-size: .8rem;
+
+    @include respond-min($bp3) {
+        padding-top: $base;
+        border-top: ($base/4) solid $grey-lighter;
+    }
+
+    a {
+        color: $color-link;
+        border-bottom: 1px solid $color-link;
+        border-bottom-color: rgba($color-link, .15);
+        transition: all .15s ease-out;
+
+        &:hover,
+        &:focus {
+            border-bottom-color: rgba($color-link, .5);
+        }
+    }
+}

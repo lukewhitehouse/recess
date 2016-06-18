@@ -1,0 +1,88 @@
+/**
+ * Title:
+ *    Forms
+ * Description:
+ *    Styling of forms and form variations
+ * Sections:
+ *    $. Basics
+ *    $. Placeholders
+ */
+
+
+
+/* $. Basics
+\*----------------------------------------------------------------*/
+
+form {
+    @extend %cf;
+    margin: 0 0 ($base*1.5) 0;
+}
+
+fieldset {
+    margin-bottom: $base*1.5;
+    padding: 0 $base;
+
+    &:last-child {
+        margin-top: 0;
+    }
+}
+
+legend {
+    font-size: 1.25em;
+    margin-bottom: $base;
+    padding: 0 1em;
+}
+
+label {
+    display: block;
+    padding-bottom: $base/4;
+}
+
+input[type=checkbox],
+input[type=radio] {
+    vertical-align: baseline;
+    background: none;
+    border: none;
+    height: .8em;
+    width: .8em;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: $base/2;
+    border: 1px solid;
+    border-radius: 0;
+    color: #666;
+    background-color: #FFF;
+    border-color: #CCC;
+}
+
+textarea {
+    resize: vertical;
+}
+
+form ul,
+form ol {
+    list-style: none;
+    margin-left: 0;
+    margin-bottom: $base;
+}
+
+form li {
+    margin-bottom: $base/2;
+}
+
+form li:last-child,
+fieldset:last-child {
+    margin-bottom: 0;
+}
+
+
+/* $. Placeholders
+\*----------------------------------------------------------------*/
+
+::placeholder {
+
+}
