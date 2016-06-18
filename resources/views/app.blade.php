@@ -9,32 +9,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Titles/Descriptions -->
-    <title>Recess - Holiday management made simpel</title>
+    <title>Recess - Holiday management made simple</title>
 
     <!-- Favicons -->
 
     <!-- Styles -->
-    <link rel="stylesheet" href="{{ elixir("css/app.css") }}">
+    <link rel="stylesheet" href="/public/assets/css/styles.css">
 
     <!-- font-face declarations -->
     <!-- insert here -->
 
     <!-- Scripts -->
+    <noscript><link href="/assets/dist/grunticon/icons.fallback.css" rel="stylesheet"></noscript>
+    <script src="/assets/dist/js/head.min.js"></script>
 </head>
 <body class="debug">
 
-<div class="container">
-    @include('partials.header')
-</div>
+    @yield('header', \View::make('partials.header'))
 
-<div class="container container--small">
     @yield('content')
-</div>
 
-<div class="container">
-    @include('partials.footer')
-</div>
+    @yield('footer', \View::make('partials.footer'))
 
-<!-- Footer scripts -->
 </body>
 </html>
