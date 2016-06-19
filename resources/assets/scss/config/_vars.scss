@@ -57,6 +57,7 @@ $red:                 #ff5722;
 /* shades */
 $color-text:          $blue-dark;
 $color-background:    $white;
+$color-border:        $grey-light;
 $color-link:          $blue;
 
 /* palette */
@@ -83,6 +84,7 @@ $weight-bold:    400;
 \*----------------------------------------------------------------*/
 
 $base: 1em;
+$radius: $base/2;
 
 
 

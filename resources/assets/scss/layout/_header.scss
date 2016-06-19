@@ -10,7 +10,6 @@
  *    $. Logo
  *    $. Nav
  *    $. Toggle
- *    $. Search
  */
 
 
@@ -21,6 +20,8 @@
 .header {
     @extend %cf;
     position: relative;
+    padding: $base 0;
+    border-bottom: 1px solid $color-border;
 }
 
 
@@ -28,6 +29,7 @@
 \*----------------------------------------------------------------*/
 
 .header__logo {
+    float: left;
 }
 
 
@@ -35,6 +37,9 @@
 \*----------------------------------------------------------------*/
 
 .header__nav {
+    float: right;
+    margin-top: $base*.75;
+
     .is-active-nav & {
     }
 }
@@ -45,21 +50,9 @@
 \*----------------------------------------------------------------*/
 
 .header__toggle {
+    display: none;
     @media screen and (min-width: $bp3) {
     }
-}
 
-.is-active-nav .header__toggle--nav,
-.is-active-search .header__toggle--search {
-}
-
-
-
-
-/* $. Search
-\*----------------------------------------------------------------*/
-
-.header__search {
-    .is-active-search & {
-    }
+    .is-active-nav & {}
 }

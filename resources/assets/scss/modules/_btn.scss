@@ -16,8 +16,9 @@
 
 %btn {
     display: inline-block;
-    padding: ($base/2) $base;
+    padding: ($base/3) $base*1.25;
     border: 0;
+    border-radius: $radius;
     transition: all .15s ease-out;
 }
 
@@ -54,10 +55,13 @@ input[type="submit"],
  */
 
 .btn--primary {
-    @include btn($white, $grey);
+    @include btn($white, $color-brand);
 }
 
-.btn--secondary {}
+.btn--secondary {
+    @include btn($grey-dark, $grey-light);
+}
+
 .btn--tertiary {}
 .btn--invert {}
 

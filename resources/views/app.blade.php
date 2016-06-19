@@ -25,11 +25,11 @@
 </head>
 <body class="debug">
 
-    @yield('header', \View::make('partials.header'))
+    @include('partials.header');
 
     @yield('content')
 
-    @yield('footer', \View::make('partials.footer'))
+    @include('partials.footer');
 
 </body>
 </html>
