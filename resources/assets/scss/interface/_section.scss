@@ -37,7 +37,7 @@
     position: relative;
     padding: $base 0;
 
-    @media screen and min-width($bp2) {
+    @media screen and (min-width: $bp2) {
         padding: ($base*2) 0;
     }
 }
@@ -63,7 +63,7 @@
 .section--large {
     padding: ($base*2) 0 ($base*2) 0;
 
-    @media screen and min-width($bp2) {
+    @media screen and (min-width: $bp2) {
         padding: ($base*4) 0 ($base*4) 0;
     }
 }

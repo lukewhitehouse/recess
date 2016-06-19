@@ -31,7 +31,7 @@
         margin-bottom: 0;
     }
 
-    @media screen and min-width($bp2) {
+    @media screen and (min-width: $bp2) {
         overflow: hidden;
     }
 }
@@ -39,7 +39,7 @@
 .media__img {
     margin-bottom: $base;
 
-    @media screen and min-width($bp2) {
+    @media screen and (min-width: $bp2) {
         float: left;
         margin-bottom: 0;
         margin-right: $base*2;
@@ -53,7 +53,7 @@
 
 .media--flipped {
     .media__img {
-        @media screen and min-width($bp2) {
+        @media screen and (min-width: $bp2) {
             float: right;
             margin-left: $base*2;
             margin-right: 0;

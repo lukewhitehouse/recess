@@ -50,7 +50,7 @@
 
 /* Size specific */
 .u-float-right-bp4 {
-    @media screen and min-width($bp4) {
+    @media screen and (min-width: $bp4) {
         float: right;
     }
 }
@@ -69,7 +69,6 @@
 
 /* Weight */
 .u-weight-normal   { font-weight: $weight-normal; }
-.u-weight-medium   { font-weight: $weight-medium; }
 .u-weight-bold     { font-weight: $weight-bold; }
 
 /* Style */

@@ -39,9 +39,7 @@
 
 /* Generic sizing */
 .icon--small { @include icon-size($icon-small); }
-.icon--medium { @include icon-size($icon-medium); }
 .icon--large { @include icon-size($icon-large); }
-.icon--xlarge { @include icon-size($icon-xlarge); }
 
 /* Styling */
 .icon--transparent { opacity: .3; filter: alpha(opacity=30); }

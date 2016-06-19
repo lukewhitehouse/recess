@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="/public/assets/css/styles.css">
 
     <!-- font-face declarations -->
-    <!-- insert here -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,300italic' rel='stylesheet' type='text/css'>
 
     <!-- Scripts -->
     <noscript><link href="/assets/dist/grunticon/icons.fallback.css" rel="stylesheet"></noscript>

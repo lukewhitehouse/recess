@@ -38,48 +38,44 @@ $black:               #000000;
 
 /* shades */
 $grey:                #888888;
-$grey-dark:           #252525;
-$grey-light:          #CCCCCC;
-$grey-lighter:        #F1F1F1;
+$grey-dark:           #444444;
+$grey-light:          #dddddd;
 
 /* primary */
 $blue:                #005994;
-$red:                 #D62323;
-$green:               #34AB00;
-$yellow:              #1B49BE;
+$blue-dark:           #37474f;
 
 /* secondary */
-$blue-light:          #28AAE1;
+$green:               #8bc34a;
+$yellow:              #ffc107;
+$red:                 #ff5722;
 
 /**
  * UI colours
  */
 
 /* shades */
-$color-text:          $grey-dark;
+$color-text:          $blue-dark;
 $color-background:    $white;
-$color-link:          $blue-light;
+$color-link:          $blue;
 
 /* palette */
-$color-brand-blue:    $blue;
-$color-brand-red:     $red;
-$color-brand-green:   $green;
-$color-brand-yellow:  $yellow;
+$color-brand:         $blue;
 
 /* states */
-$color-success:       #2ECC71;
-$color-error:         #E74C3C;
+$color-success:       $green;
+$color-warning:       $yellow;
+$color-error:         $red;
 
 
 
 /* $. Typography
 \*----------------------------------------------------------------*/
 
-$font: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+$font: "Lato", Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
 
 $weight-normal:  300;
-$weight-medium:  500;
-$weight-bold:    700;
+$weight-bold:    400;
 
 
 
@@ -95,9 +91,7 @@ $base: 1em;
 
 $icon: 20px;
 $icon-small: 16px;
-$icon-medium: 30px;
 $icon-large: 45px;
-$icon-xlarge: 65px;
 
 
 
