@@ -75,6 +75,8 @@ input[type="submit"],
 }
 
 .btn--large {
+    padding-left: $base*2;
+    padding-right: $base*2;
     font-size: 1.2rem;
 }
 

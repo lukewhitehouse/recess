@@ -1,24 +1,9 @@
-<hr>
+<div class="container">
+    <footer class="footer">
+        <div class="footer__copyright | u-size-small u-align-center">
+            Recess is an open source holiday management tool maintained by <a href="#" class="link">Luke</a>. Registered under the Apache License 2.0
+        </div>
+    </footer>
+</div>
 
-<small>By <a href="http://twitter.com/_lukewh">Luke Whitehouse</a>. All rights reserved.</small>
-
-<nav>
-    @if ( Auth::user() )
-        <li>
-            <a href="/account">Account</a>
-        </li>
-
-        <li>
-            <a href="/logout">Logout</a>
-        </li>
-    @else
-        <li>
-            <a href="/login">Login</a>
-        </li>
-
-        <li>
-            <a href="/register">Register</a>
-        </li>
-    @endif
-
-</nav>
+<script src="/assets/dist/js/main.min.js"></script>

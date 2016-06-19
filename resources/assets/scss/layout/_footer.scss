@@ -16,16 +16,12 @@
 
 .footer {
     @extend %cf;
+    padding: $base 0;
+    border-top: 1px solid $color-border;
 }
 
-.footer__logo {
-}
-
-
-
-/* $. Copyright
-\*----------------------------------------------------------------*/
-
-.copyright {
-    @extend %cf;
+.footer__copyright {
+    @extend .container--small;
+    margin: 0 auto;
+    color: $grey;
 }

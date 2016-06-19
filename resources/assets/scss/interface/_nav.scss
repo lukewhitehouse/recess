@@ -47,13 +47,8 @@ $color-nav: $color-link;
 }
 
 .nav__link {
+    @extend .link;
     font-size: .85rem;
-    border-bottom: 1px solid rgba($color-link, .15);
-    transition: border-color .15s ease-out;
-
-    &:hover, &:focus {
-        border-bottom-color: rgba($color-link, .65);
-    }
 }
 
 

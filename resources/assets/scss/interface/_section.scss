@@ -67,3 +67,11 @@
         padding: ($base*4) 0 ($base*4) 0;
     }
 }
+
+.section--banner {
+    padding: ($base*4) 0 ($base*4) 0;
+
+    @media screen and (min-width: $bp2) {
+        padding: ($base*8) 0 ($base*8) 0;
+    }
+}
