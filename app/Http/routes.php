@@ -37,7 +37,7 @@ Route::get(
 );
 
 /**
- * Logged in views
+ * Account routes
  */
 Route::get(
     'account', [
@@ -48,9 +48,19 @@ Route::get(
 
 Route::resource('holidays', 'HolidaysController');
 
-
-
 /**
  * User Authentication
  */
-Route::auth();
+// Login routes
+Route::get('login',                   ['as' => 'auth.login', 'uses' => 'Auth\AuthController@showLoginForm']);
+Route::post('login',                  ['as' => 'auth.login', 'uses' => 'Auth\AuthController@login']);
+Route::get('logout',                  ['as' => 'auth.logout', 'uses' => 'Auth\AuthController@logout']);
+
+// Registration Routes
+Route::get('register',                ['as' => 'auth.register', 'uses' => 'Auth\AuthController@showRegistrationForm']);
+Route::post('register',               ['as' => 'auth.register', 'uses' => 'Auth\AuthController@register']);
+
+// Password Reset Routes
+Route::get('password/reset/{token?}', ['as' => 'auth.password.reset', 'uses' => 'Auth\PasswordController@showResetForm']);
+Route::post('password/email',         ['as' => 'auth.password.email',  'uses' => 'Auth\PasswordController@sendResetLinkEmail']);
+
