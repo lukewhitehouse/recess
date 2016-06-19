@@ -21,7 +21,7 @@
 }
 
 .footer__copyright {
-    @extend .container--small;
+    max-width: 450px;
     margin: 0 auto;
     color: $grey;
 }

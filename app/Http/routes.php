@@ -46,11 +46,15 @@ Route::get(
     ]
 );
 
+/**
+ * Holidays routes
+ */
 Route::resource('holidays', 'HolidaysController');
 
 /**
  * User Authentication
  */
+
 // Login routes
 Route::get('login',                   ['as' => 'auth.login', 'uses' => 'Auth\AuthController@showLoginForm']);
 Route::post('login',                  ['as' => 'auth.login', 'uses' => 'Auth\AuthController@login']);

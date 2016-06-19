@@ -1,7 +1,7 @@
 <div class="container container--flush">
     <header class="header">
         <div class="logo | header__logo">
-            <a href="#" class="beta headline | logo__heading">Recess</a>
+            <a href="/" class="beta headline | logo__heading">Recess</a>
             <div class="logo__subheading | u-size-small">Holiday management made simple</div>
         </div>
 
@@ -12,11 +12,11 @@
 
         <nav class="nav | header__nav" id="navigation" role="navigation">
             <li class="nav__item">
-                <a href="#" class="nav__link">Register</a>
+                <a href="{{ route('auth.register') }}" class="nav__link">Register</a>
             </li>
 
             <li class="nav__item">
-                <a href="#" class="btn btn--secondary">Login</a>
+                <a href="{{ route('auth.login') }}" class="btn btn--secondary">Login</a>
             </li>
         </nav>
     </header>
