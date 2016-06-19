@@ -13,7 +13,8 @@
 
 h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
-    margin-bottom: $base;
+    margin-bottom: $base/4;
+    font-weight: $weight-normal;
     line-height: 1.2;
 }
 
@@ -38,19 +39,19 @@ blockquote > :last-child {
 \*----------------------------------------------------------------*/
 
 h1, .alpha {
-    font-size: 2.25rem;
+    font-size: 2rem;
 }
 
 h2, .beta {
-    font-size: 1.875rem;
+    font-size: 1.666666667rem;
 }
 
 h3, .gamma {
-    font-size: 1.5rem;
+    font-size: 1.333333333rem;
 }
 
 h4, .delta {
-    font-size: 1.25rem;
+    font-size: 1.111111111rem;
 }
 
 h5, .epsilon {
@@ -62,10 +63,9 @@ h6, .zeta {
 }
 
 .intro {
-    font-size: 1.25em;
+    font-size: 1.222222222rem;
 }
 
 .headline {
-    border-bottom: 1px solid darken($color-background, 10%);
-    padding-bottom: .45em;
+    color: $color-link;
 }

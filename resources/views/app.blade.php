@@ -14,14 +14,14 @@
     <!-- Favicons -->
 
     <!-- Styles -->
-    <link rel="stylesheet" href="/public/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
 
     <!-- font-face declarations -->
     <link href='https://fonts.googleapis.com/css?family=Lato:400,300,300italic' rel='stylesheet' type='text/css'>
 
     <!-- Scripts -->
-    <noscript><link href="/assets/dist/grunticon/icons.fallback.css" rel="stylesheet"></noscript>
-    <script src="/assets/dist/js/head.min.js"></script>
+    <noscript><link href="/assets/grunticon/icons.fallback.css" rel="stylesheet"></noscript>
+    <script src="/assets/js/head.min.js"></script>
 </head>
 <body class="debug">
 
