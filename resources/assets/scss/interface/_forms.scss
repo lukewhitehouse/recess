@@ -1,0 +1,62 @@
+/**
+ * Title:
+ *    Forms
+ * Description:
+ *    Advanced forms styling building upon the base/forms
+ * Sections:
+ *    $. Container
+ *    $. Checkbox
+ */
+
+
+
+/* $. Container
+\*----------------------------------------------------------------*/
+
+.form {
+    max-width: 300px;
+    margin: 0 auto;
+
+    .note {
+        margin-top: - $base;
+        margin-bottom: $base;
+    }
+}
+
+
+
+/* $. Extras
+\*----------------------------------------------------------------*/
+
+.form__extra {
+    @extend %cf;
+}
+
+.form__extra-left {
+    float: left;
+    margin-top: $base*.2;
+}
+
+.form__extra-right {
+    float: right;
+}
+
+
+
+/* $. Checkbox
+\*----------------------------------------------------------------*/
+
+.checkbox {
+    position: relative;
+}
+
+.checkbox__label {
+    padding-left: $base*1.5;
+    font-size: .7rem;
+}
+
+.checkbox__input {
+    position: absolute;
+    top: $base*.05;
+    left: 0;
+}

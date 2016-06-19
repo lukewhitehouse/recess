@@ -1,0 +1,27 @@
+/**
+ * Title:
+ *    Note
+ * Description:
+ *    Small notices displayed to give feedback to user
+ * Sections:
+ *    $. Base
+ *    $. Styles
+ */
+
+
+
+/* $. Base
+\*----------------------------------------------------------------*/
+
+.note {
+    font-size: .75rem;
+}
+
+
+
+/* $. Styles
+\*----------------------------------------------------------------*/
+
+.note--error {
+    color: $color-error;
+}

@@ -35,28 +35,55 @@ legend {
 
 label {
     display: block;
+    font-size: .85rem;
+    font-weight: $weight-bold;
     padding-bottom: $base/4;
 }
 
 input[type=checkbox],
 input[type=radio] {
     vertical-align: baseline;
-    background: none;
-    border: none;
-    height: .8em;
-    width: .8em;
+    height: $base;
+    width: $base;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid darken($color-border, 10%);
+    border-radius: $radius;
+    box-shadow:
+        inset -2px -2px $white,
+        inset 2px 2px $white,
+        inset 2px -2px $white,
+        inset -2px 2px $white;
+
+    &:checked {
+        background: $color-link;
+    }
+
+    &:focus {
+        border-color: darken($color-border, 10%);
+    }
 }
 
 input,
 select,
 textarea {
     width: 100%;
+    margin-bottom: $base;
     padding: $base/2;
-    border: 1px solid;
-    border-radius: 0;
-    color: #666;
-    background-color: #FFF;
-    border-color: #CCC;
+    font-size: .85rem;
+    color: $color-text;
+    background-color: $white;
+    border: 1px solid darken($grey-light, 10%);
+    border-radius: $radius/2;
+
+    &:focus {
+        border-color: darken($grey-light, 20%);
+    }
+
+    &.is-error {
+        border-color: $color-error;
+    }
 }
 
 textarea {
@@ -78,6 +105,7 @@ form li:last-child,
 fieldset:last-child {
     margin-bottom: 0;
 }
+
 
 
 /* $. Placeholders
