@@ -11,13 +11,19 @@
         </button>
 
         <nav class="nav | header__nav" id="navigation" role="navigation">
-            <li class="nav__item">
-                <a href="{{ route('auth.register') }}" class="nav__link">Register</a>
-            </li>
+            @unless( Auth::user() )
+                <li class="nav__item">
+                    <a href="{{ route('auth.register') }}" class="nav__link">Register</a>
+                </li>
 
-            <li class="nav__item">
-                <a href="{{ route('auth.login') }}" class="btn btn--secondary">Login</a>
-            </li>
+                <li class="nav__item">
+                    <a href="{{ route('auth.login') }}" class="btn btn--secondary">Login</a>
+                </li>
+            @else
+                <li class="nav__item">
+                    <a href="{{ route('auth.logout') }}" class="btn btn--secondary">Logout</a>
+                </li>
+            @endif
         </nav>
     </header>
 </div>
