@@ -11,6 +11,23 @@
         </div> <!-- .container -->
 
         <div class="container">
+            <div class="grid">
+                <div class="grid__item grid__item--6-12-bp4">
+                    <h2>Your recent requests</h2>
+                    <div class="content">
+                        <p>An overview of your most recent holiday requests and all the information you could require about them.</p>
+                        <a href="#" class="link">View all holiday requests</a>
+                    </div>
+                </div>
+
+                <div class="grid__item grid__item--6-12-bp4">
+                    <h2>Compulsory holidays</h2>
+                    <div class="content">
+                        <p>Here’s a list of compulsory holidays that are taken off your total holiday limit of 25 as Mixd closes the office for Christmas.</p>
+                        <a href="#" class="link">Read the FAQ for more information</a>
+                    </div>
+                </div>
+            </div>
             @if($holidays)
                 <h5>Holiday requests</h5>
                 <table>

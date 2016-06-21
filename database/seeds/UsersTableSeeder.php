@@ -1,6 +1,8 @@
 <?php
 
+use App\User;
 use Illuminate\Database\Seeder;
+
 
 class UsersTableSeeder extends Seeder
 {
@@ -11,10 +13,24 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('users')->insert([
-            'name' => str_random(10),
-            'email' => str_random(10).'@gmail.com',
-            'password' => bcrypt('secret'),
+        // Create new faker instance
+        $faker = Faker\Factory::create();
+
+        // Create first 'admin' user
+        User::create([
+            'name' => 'Luke Whitehouse',
+            'email' => 'luke@lukewhitehouse.co.uk',
+            'password' => bcrypt('password')
         ]);
+
+        // Generate otehr users
+        foreach(range(1, 20) as $index)
+        {
+            User::create([
+                'name' => $faker->name,
+                'email' => $faker->email,
+                'password' => bcrypt($faker->password)
+            ]);
+        }
     }
 }
