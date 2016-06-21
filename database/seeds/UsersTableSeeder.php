@@ -18,18 +18,22 @@ class UsersTableSeeder extends Seeder
 
         // Create first 'admin' user
         User::create([
-            'name' => 'Luke Whitehouse',
-            'email' => 'luke@lukewhitehouse.co.uk',
-            'password' => bcrypt('password')
+            'first_name' => 'Luke',
+            'last_name'  => 'Whitehouse',
+            'job_role'   => 'Senior Front-end Developer',
+            'email'      => 'luke@lukewhitehouse.co.uk',
+            'password'   => bcrypt('password')
         ]);
 
         // Generate otehr users
         foreach(range(1, 20) as $index)
         {
             User::create([
-                'name' => $faker->name,
-                'email' => $faker->email,
-                'password' => bcrypt($faker->password)
+                'first_name' => $faker->firstName,
+                'last_name'  => $faker->lastName,
+                'job_role'   => $faker->jobTitle,
+                'email'      => $faker->email,
+                'password'   => bcrypt($faker->password)
             ]);
         }
     }

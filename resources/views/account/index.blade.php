@@ -6,7 +6,7 @@
             <h1 class="headline u-align-center">Account area</h1>
 
             <div class="content">
-                <p class="intro u-align-center">Welcome back to your account area {{ $user->name }}</p>
+                <p class="intro u-align-center">Welcome back to your account area {{ $user->first_name }}</p>
             </div> <!-- .content -->
         </div> <!-- .container -->
 
