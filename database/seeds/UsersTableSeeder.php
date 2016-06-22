@@ -15,7 +15,6 @@ class UsersTableSeeder extends Seeder
     {
         // Create new faker instance
         $faker = Faker\Factory::create();
-        $fakerCompany = new Faker\Provider\en_US\Company($);
 
         // Create first 'admin' user
         User::create([
@@ -32,7 +31,7 @@ class UsersTableSeeder extends Seeder
             User::create([
                 'first_name' => $faker->firstName,
                 'last_name'  => $faker->lastName,
-                'job_role'   => $fakerCompany->jobTitle,
+                'job_role'   => $faker->jobTitle,
                 'email'      => $faker->email,
                 'password'   => bcrypt($faker->password)
             ]);
