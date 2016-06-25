@@ -13,6 +13,8 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
+        DB::table('users')->delete();
+
         // Create new faker instance
         $faker = Faker\Factory::create();
 
@@ -26,7 +28,7 @@ class UsersTableSeeder extends Seeder
         ]);
 
         // Generate otehr users
-        for($i = 0; $i > 20; $i++)
+        for($i = 0; $i < 20; $i++)
         {
             User::create([
                 'first_name' => $faker->firstName,
