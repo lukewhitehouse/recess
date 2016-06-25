@@ -26,7 +26,7 @@ class UsersTableSeeder extends Seeder
         ]);
 
         // Generate otehr users
-        foreach(range(1, 20) as $index)
+        for($i = 0; $i > 20; $i++)
         {
             User::create([
                 'first_name' => $faker->firstName,
