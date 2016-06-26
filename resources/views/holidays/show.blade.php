@@ -2,6 +2,6 @@
 
 @section('content')
 
-    {{ dd($holiday) }}
+    {{ dd($holiday->user) }}
 
 @stop

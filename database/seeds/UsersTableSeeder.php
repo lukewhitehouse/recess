@@ -13,7 +13,7 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('users')->delete();
+        Eloquent::unguard();
 
         // Create new faker instance
         $faker = Faker\Factory::create();
@@ -27,14 +27,14 @@ class UsersTableSeeder extends Seeder
             'password'   => bcrypt('password')
         ]);
 
-        // Generate otehr users
+        // Generate other users
         for($i = 0; $i < 20; $i++)
         {
             User::create([
                 'first_name' => $faker->firstName,
                 'last_name'  => $faker->lastName,
                 'job_role'   => $faker->jobTitle,
-                'email'      => $faker->email,
+                'email'      => $faker->safeEmail,
                 'password'   => bcrypt($faker->password)
             ]);
         }

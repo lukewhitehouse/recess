@@ -27,6 +27,8 @@ class HolidaysController extends Controller
      */
     public function index()
     {
+        $user = \Auth::user();
+
         // Get all holidays for current user
         $holidays = Holiday::where('user_id', $user->id)->get();
 
@@ -45,7 +47,8 @@ class HolidaysController extends Controller
         // Get holiday in question
         $holiday = Holiday::findOrFail($holiday_id);
 
-        return view('holidays.show')->with('holiday', $holiday);
+        dd($holiday->user);
+        //return view('holidays.show')->with('holiday', $holiday);
     }
 
     /**
