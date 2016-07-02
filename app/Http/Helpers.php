@@ -5,7 +5,7 @@
  *
  * @return array
  */
-function get_holiday_statuses() {
+function getStates() {
     return [
         'pending'   => 'Pending',
         'accepted'  => 'Accepted',
@@ -19,7 +19,7 @@ function get_holiday_statuses() {
  *
  * @return array
  */
-function get_holiday_types() {
+function getTypes() {
     return [
         'holiday'   => 'Holiday',
         'sickness'  => 'Sickness',

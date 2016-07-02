@@ -6,3 +6,13 @@
         border-bottom-color: rgba($color-link, .65);
     }
 }
+
+.link--error {
+    color: $color-error;
+    border-bottom-color: rgba($color-error, .15);
+
+    &:hover, &:focus {
+        color: darken($color-error, 10%);
+        border-bottom-color: rgba($color-error, .65);
+    }
+}

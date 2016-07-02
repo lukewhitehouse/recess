@@ -25,10 +25,6 @@ class AccountController extends Controller
      */
     public function index()
     {
-        $statuses = get_holiday_types();
-
-        dd($statuses);
-
         // Get currently logged in user
         $user = \Auth::user();
 

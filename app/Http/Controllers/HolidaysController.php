@@ -47,8 +47,7 @@ class HolidaysController extends Controller
         // Get holiday in question
         $holiday = Holiday::findOrFail($holiday_id);
 
-        dd($holiday->user);
-        //return view('holidays.show')->with('holiday', $holiday);
+        return view('holidays.show')->with('holiday', $holiday);
     }
 
     /**

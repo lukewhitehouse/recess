@@ -1,0 +1,97 @@
+/**
+ * Title:
+ *    Holiday
+ * Description:
+ *    Styling a holiday listing
+ * Sections:
+ *    $. Base
+ *    $. Details
+ */
+
+
+
+/* $. Base
+\*----------------------------------------------------------------*/
+
+.holidays {
+
+}
+
+.holiday {
+    @extend %cf;
+    position: relative;
+    padding-left: $base*2;
+
+    &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: $base/1.5;
+        border-radius: $radius;
+    }
+}
+
+.holiday__misc,
+.holiday__controls {
+    font-size: .85rem;
+}
+
+
+/* $. Details
+\*----------------------------------------------------------------*/
+
+.holiday__details {
+    float: left;
+}
+
+.holiday__date {
+    color: $color-brand;
+}
+
+.holiday__misc {
+    dt,
+    dd {
+        display: inline-block;
+    }
+
+    dt {
+        margin-left: $base/2;
+        font-weight: $weight-bold;
+        color: $color-text;
+
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+
+    dd {
+        margin-bottom: 0;
+        font-style: normal;
+    }
+}
+
+
+
+/* $. Controls
+\*----------------------------------------------------------------*/
+
+.holiday__controls {
+    float: right;
+    margin-top: $base/4;
+
+    li {
+        margin-bottom: 0;
+    }
+}
+
+
+
+/* $. Modifiers
+\*----------------------------------------------------------------*/
+
+.holiday--pending:before   { background: $color-warning; }
+.holiday--accepted:before  { background: $color-success; }
+.holiday--declined:before  { background: $color-error; }
+.holiday--cancelled:before { background: $color-text; }

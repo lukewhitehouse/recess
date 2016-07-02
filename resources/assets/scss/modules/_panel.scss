@@ -44,6 +44,7 @@
     position: relative;
     display: block;
     padding: $base;
+    border-radius: $radius;
 
     @media screen and (min-width: $bp2) {
         padding: $base*2;
@@ -72,10 +73,10 @@
 }
 
 .panel--slim {
-    padding: $base*.75;
+    padding: ($base/1.5) $base;
 
     @media screen and (min-width: $bp2) {
-        padding: $base*1.5;
+        padding: $base ($base*1.5);
     }
 }
 
@@ -85,7 +86,7 @@
 \*----------------------------------------------------------------*/
 
 .panel--white   { @include panel($color-text, $white); }
-.panel--grey    { @include panel($color-text, $grey-light); }
+.panel--grey    { @include panel($color-text, $grey-lighter); }
 
 .panel--success { border-color: $color-success; }
 .panel--error   { border-color: $color-error; }
