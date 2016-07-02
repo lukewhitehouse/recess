@@ -30,6 +30,18 @@ function getTypes() {
 }
 
 /**
+ * Formats the holiday states into sexy string
+ *
+ * @param  string    $state   The holiday state which needs formatting
+ * @return string
+ */
+function getFormattedState($state) {
+    $output = ucfirst($state);
+
+    return $output;
+}
+
+/**
  * Formats the holiday type into sexy string
  *
  * @param  string    $type   The holiday type which needs formatting

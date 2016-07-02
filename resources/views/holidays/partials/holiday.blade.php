@@ -11,7 +11,7 @@
             <dt>Type:</dt>
             <dd>{{ getFormattedType($i->type) }}</dd>
             <dt>Status:</dt>
-            <dd>{{ $i->status }}</dd>
+            <dd>{{ getFormattedState($i->status) }}</dd>
         </dl>
     </div>
 
