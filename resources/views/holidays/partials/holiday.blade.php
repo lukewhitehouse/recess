@@ -9,7 +9,7 @@
             <dt>Days:</dt>
             <dd>2</dd>
             <dt>Type:</dt>
-            <dd>{{ $i->type }}</dd>
+            <dd>{{ getFormattedType($i->type) }}</dd>
             <dt>Status:</dt>
             <dd>{{ $i->status }}</dd>
         </dl>

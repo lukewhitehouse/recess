@@ -7,10 +7,10 @@
  */
 function getStates() {
     return [
-        'pending'   => 'Pending',
-        'accepted'  => 'Accepted',
-        'declined'  => 'Declined',
-        'cancelled' => 'Cancelled'
+        'pending',
+        'accepted',
+        'declined',
+        'cancelled'
     ];
 }
 
@@ -21,10 +21,26 @@ function getStates() {
  */
 function getTypes() {
     return [
-        'holiday'   => 'Holiday',
-        'sickness'  => 'Sickness',
-        'lieu'      => 'Time off in lieu',
-        'unpaid'    => 'Unpaid leave',
-        'grievance' => 'Grievance'
+        'holiday',
+        'sickness',
+        'lieu',
+        'unpaid',
+        'grievance'
     ];
+}
+
+/**
+ * Formats the holiday type into sexy string
+ *
+ * @param  string    $type   The holiday type which needs formatting
+ * @return string
+ */
+function getFormattedType($type) {
+    if($type === 'lieu') {
+        $output = 'Time off in lieu';
+    } else {
+        $output = ucfirst($type);
+    }
+
+    return $output;
 }
