@@ -1,15 +1,18 @@
 @extends('app')
 
 @section('content')
-    <main class="section section--large">
-        <div class="container container--small u-push-bottom@2">
+    <div class="section section--large">
+        <div class="container container--small">
             <h1 class="headline u-align-center">Account area</h1>
 
-            <div class="content">
-                <p class="intro u-align-center">Welcome back to your account area {{ $user->first_name }}</p>
+            <div class="content | u-align-center">
+                <p class="intro">Welcome back to your account area {{ $user->first_name }}</p>
+                <a href="#" class="btn btn--primary">Request a holiday</a>
             </div> <!-- .content -->
         </div> <!-- .container -->
+    </div> <!-- .section -->
 
+    <main class="section section--large">
         <div class="container">
             <div class="grid">
                 <article class="grid__item grid__item--6-12-bp4">
