@@ -20,6 +20,11 @@ class HolidaysTableSeeder extends Seeder
         // Create new faker instance
         $faker = Faker\Factory::create();
 
+        // Get all states
+        $states = getStates();
+
+        // Get all types
+        $types = getTypes();
 
         // Generate lots of holidays
         for($i = 0; $i < 100; $i++)
@@ -34,8 +39,8 @@ class HolidaysTableSeeder extends Seeder
                 'date_start'  => $dateStart,
                 'date_end'    => $dateEnd,
                 'description' => $faker->paragraph(2),
-                'type'        => 'holiday',
-                'status'      => 'pending'
+                'type'        => $types[array_rand($types)],
+                'status'      => $states[array_rand($states)]
             ]);
         }
     }
